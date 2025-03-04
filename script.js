@@ -67,6 +67,17 @@ function filterPlants(plants, searchTerm) {
     );
 }
 
+async function loadCompanionInfo(language = 'en') {
+    try {
+        const response = await fetch(`companions${language === 'es' ? '_es' : ''}.json`);
+        const data = await response.json();
+        return data['Plant Families Companion Info'];
+    } catch (error) {
+        console.error('Error loading companion info:', error);
+        return {};
+    }
+}
+
 function showPlantDetails(plant, labels) {
     const modalOverlay = document.getElementById('modalOverlay');
     const modalContent = document.getElementById('modalContent');
@@ -100,21 +111,68 @@ function showPlantDetails(plant, labels) {
                 <span>${plant['Planting Method']}</span>
             </div>
             <div class="detail-item">
-                <span class="detail-label">${labels.trellised}:</span>
-                <span>${plant['Trellised']}</span>
-            </div>
-            <div class="detail-item">
                 <span class="detail-label">${labels.sunRequirement}:</span>
                 <span>${plant['Some Shade OK']}</span>
             </div>
-            <div class="detail-item">
-                <span class="detail-label">${labels.plantingPattern}:</span>
-                <span>${plant['Single or 2-week Succession']}</span>
+        </div>
+        <div class="companion-info-section">
+            <button class="companion-info-toggle" onclick="toggleCompanionInfo(this)">
+                <span>${labels.familyInfo || 'Family Information'}</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="companion-info-content" style="display: none;">
+                <div id="companionInfoDetails">Loading...</div>
             </div>
         </div>
     `;
 
     modalOverlay.style.display = 'flex';
+    loadCompanionInfo(document.documentElement.lang || 'en')
+        .then(companionInfo => {
+            const familyInfo = companionInfo[plant['Plant Family']];
+            if (familyInfo) {
+                const companionDetails = document.getElementById('companionInfoDetails');
+                companionDetails.innerHTML = `
+                    <div class="companion-detail">
+                        <h3>${labels.wateringNeeds || 'Watering Needs'}</h3>
+                        <p>${familyInfo['Watering Needs']}</p>
+                    </div>
+                    <div class="companion-detail">
+                        <h3>${labels.commonPests || 'Common Pests'}</h3>
+                        <ul>
+                            ${familyInfo['Common Pests'].map(pest => `<li>${pest}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <div class="companion-detail">
+                        <h3>${labels.goodCompanions || 'Good Companions'}</h3>
+                        <p>${Array.isArray(familyInfo['Good Companions']) ? familyInfo['Good Companions'].join(', ') : familyInfo['Good Companions']}</p>
+                    </div>
+                    <div class="companion-detail">
+                        <h3>${labels.badCompanions || 'Bad Companions'}</h3>
+                        <p>${Array.isArray(familyInfo['Bad Companions']) ? familyInfo['Bad Companions'].join(', ') : familyInfo['Bad Companions']}</p>
+                    </div>
+                    <div class="companion-detail">
+                        <h3>${labels.otherInfo || 'Other Information'}</h3>
+                        <p>${familyInfo['Other Info']}</p>
+                    </div>
+                `;
+            } else {
+                document.getElementById('companionInfoDetails').innerHTML = 
+                    `<p class="no-info-message">${labels.noFamilyInfo || 'No family information available.'}</p>`;
+            }
+        });
+}
+
+function toggleCompanionInfo(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('.toggle-icon');
+    if (content.style.display === 'none') {
+        content.style.display = 'block';
+        icon.textContent = '▲';
+    } else {
+        content.style.display = 'none';
+        icon.textContent = '▼';
+    }
 }
 
 function initializeApp(labels, popularPlantNames) {

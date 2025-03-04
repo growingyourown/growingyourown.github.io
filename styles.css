@@ -158,6 +158,74 @@ header {
     color: var(--primary-color);
 }
 
+.companion-info-section {
+    margin-top: 1.5rem;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1rem;
+}
+
+.companion-info-toggle {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.companion-info-toggle:hover {
+    background-color: var(--primary-color);
+}
+
+.companion-info-content {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.companion-detail {
+    margin-bottom: 1.5rem;
+}
+
+.companion-detail:last-child {
+    margin-bottom: 0;
+}
+
+.companion-detail h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.companion-detail ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+.companion-detail li {
+    margin-bottom: 0.3rem;
+}
+
+.no-info-message {
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+}
+
+.toggle-icon {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
 @media screen and (max-width: 768px) {
     .plants-grid {
         grid-template-columns: 1fr;
