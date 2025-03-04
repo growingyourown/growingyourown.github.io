@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Growing Your Own Plant Guide</title>
+    <title>Guía para Cultivar tus Propias Plantas</title>
     <style>
         :root {
             --primary-color: #2c5530;
@@ -173,11 +173,11 @@
 </head>
 <body>
     <header>
-        <h1>Growing Your Own Plant Guide</h1>
+        <h1>Guía para Cultivar tus Propias Plantas</h1>
     </header>
 
     <div class="search-container">
-        <input type="text" class="search-input" placeholder="Search for plants..." id="searchInput">
+        <input type="text" class="search-input" placeholder="Buscar plantas..." id="searchInput">
     </div>
 
     <main class="plants-grid" id="plantsGrid">
@@ -194,7 +194,7 @@
     <script>
         async function loadPlants() {
             try {
-                const response = await fetch('data.json');
+                const response = await fetch('data_es.json');
                 const data = await response.json();
                 return data;
             } catch (error) {
@@ -319,16 +319,16 @@
             const modalClose = document.getElementById('modalClose');
 
             const popularPlants = plants.filter(plant => [
-                'Tomato',
-                'Pepper',
-                'Lettuce',
-                'Cucumber',
-                'Carrot',
-                'Beans',
-                'Kale',
-                'Onion',
-                'Garlic',
-                'Broccoli'
+                'Tomate',    // Tomato
+                'Pimiento',  // Pepper
+                'Lechuga',   // Lettuce
+                'Pepino',    // Cucumber
+                'Zanahoria', // Carrot
+                'Frijoles',  // Beans
+                'Col rizada',// Kale
+                'Cebolla',   // Onion
+                'Ajo',       // Garlic
+                'Brócoli'    // Broccoli
             ].includes(plant['Crop Name'])).slice(0, 12);
 
             function renderPlants(filteredPlants) {
