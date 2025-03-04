@@ -11,100 +11,100 @@
             --background-color: #f5f7f5;
             --text-color: #333;
         }
-
+    
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+    
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             background-color: var(--background-color);
             color: var(--text-color);
         }
-
+    
         header {
             background-color: var(--primary-color);
             color: white;
-            padding: 2rem;
+            padding: 1.5rem; /* Reduced padding */
             text-align: center;
         }
-
+    
         .search-container {
             max-width: 600px;
-            margin: 2rem auto;
+            margin: 1.5rem auto; /* Reduced margin */
             padding: 0 1rem;
         }
-
+    
         .search-input {
             width: 100%;
-            padding: 1rem;
-            font-size: 1.1rem;
+            padding: 0.8rem; /* Reduced padding */
+            font-size: 1rem; /* Slightly smaller font size */
             border: 2px solid var(--secondary-color);
             border-radius: 8px;
             outline: none;
         }
-
+    
         .plants-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            padding: 0.75rem;
+            gap: 1rem; /* Reduced gap */
+            padding: 1rem; /* Reduced padding */
             max-width: 1200px;
             margin: 0 auto;
         }
-
+    
         .plant-card {
             background: white;
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
             overflow: hidden;
             transition: transform 0.3s ease;
             cursor: pointer;
         }
-
+    
         .plant-image {
             width: 100%;
-            height: 180px;
+            height: 160px; /* Reduced height */
             object-fit: cover;
             background-color: var(--background-color);
         }
-
+    
         .plant-info {
-            padding: 0.75rem;
+            padding: 1rem; /* Increased padding */
             display: flex;
             flex-direction: column;
             height: 100%;
         }
-
+    
         .plant-details {
             display: grid;
-            gap: 0.15rem;
-            font-size: 0.9rem;
+            gap: 0.2rem; /* Reduced gap */
+            font-size: 0.85rem; /* Slightly smaller font size */
             flex-grow: 1;
             word-wrap: break-word;
             overflow-wrap: break-word;
             width: 100%;
-            margin: 0.2rem 0;
+            margin: 0.3rem 0; /* Reduced margin */
         }
         
         .plant-details p {
             margin: 0;
             line-height: 1.4;
         }
-
+    
         .plant-family {
             display: inline-block;
             background-color: var(--secondary-color);
             color: white;
             padding: 0.3rem 0.8rem;
             border-radius: 20px;
-            font-size: 0.9rem;
+            font-size: 0.85rem; /* Slightly smaller font size */
             margin-top: 0.5rem;
         }
-
+    
         .modal-overlay {
             display: none;
             position: fixed;
@@ -117,7 +117,7 @@
             justify-content: center;
             align-items: center;
         }
-
+    
         .modal {
             background: white;
             padding: 2rem;
@@ -128,7 +128,7 @@
             overflow-y: auto;
             position: relative;
         }
-
+    
         .modal-close {
             position: absolute;
             top: 1rem;
@@ -139,28 +139,28 @@
             cursor: pointer;
             color: var(--primary-color);
         }
-
+    
         .modal-content {
             margin-top: 1rem;
         }
-
+    
         .modal h2 {
             color: var(--primary-color);
             margin-bottom: 1rem;
         }
-
+    
         .modal-details {
             display: grid;
             gap: 0.8rem;
         }
-
+    
         .detail-item {
             display: grid;
             grid-template-columns: 160px 1fr;
             gap: 1rem;
             align-items: start;
         }
-
+    
         .detail-label {
             font-weight: bold;
             color: var(--primary-color);
@@ -328,6 +328,7 @@
             ].includes(plant['Crop Name'])).slice(0, 12);
 
             function renderPlants(filteredPlants) {
+                filteredPlants.sort((a, b) => a['Crop Name'].localeCompare(b['Crop Name'])); // Sort alphabetically by 'Crop Name'
                 plantsGrid.innerHTML = '';
                 filteredPlants.forEach(plant => {
                     plantsGrid.appendChild(createPlantCard(plant));
