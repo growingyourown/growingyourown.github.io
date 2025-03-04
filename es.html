@@ -50,8 +50,8 @@
         .plants-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 1.25rem;
-            padding: 1rem;
+            gap: 1rem;
+            padding: 0.75rem;
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -67,17 +67,13 @@
 
         .plant-image {
             width: 100%;
-            height: 200px;
+            height: 180px;
             object-fit: cover;
             background-color: var(--background-color);
         }
 
-        .plant-card:hover {
-            transform: translateY(-5px);
-        }
-
         .plant-info {
-            padding: 1rem;
+            padding: 0.75rem;
             display: flex;
             flex-direction: column;
             height: 100%;
@@ -85,13 +81,13 @@
 
         .plant-details {
             display: grid;
-            gap: 0.2rem;
+            gap: 0.15rem;
             font-size: 0.9rem;
             flex-grow: 1;
             word-wrap: break-word;
             overflow-wrap: break-word;
             width: 100%;
-            margin: 0.3rem 0;
+            margin: 0.2rem 0;
         }
         
         .plant-details p {
@@ -228,12 +224,12 @@
             details.className = 'plant-details';
 
             const plantDetails = [
-                ['Planting Window', plant['Planting Window']],
-                ['Days to Harvest', plant['Days to Harvest']],
-                ['Footprint', plant['Footprint']],
-                ['Height', plant['Height']],
-                ['Planting Method', plant['Planting Method']],
-                ['Sun Requirement', plant['Some Shade OK']]
+                ['Período de Siembra', plant['Planting Window']],
+                ['Días hasta la Cosecha', plant['Days to Harvest']],
+                ['Espacio Requerido', plant['Footprint']],
+                ['Altura', plant['Height']],
+                ['Método de Siembra', plant['Planting Method']],
+                ['Requisito de Sol', plant['Some Shade OK']]
             ].filter(([_, value]) => value && value.trim());
 
             details.innerHTML = plantDetails
@@ -270,39 +266,39 @@
                 <h2>${plant['Crop Name']}</h2>
                 <div class="modal-details">
                     <div class="detail-item">
-                        <span class="detail-label">Plant Family:</span>
+                        <span class="detail-label">Familia de Plantas:</span>
                         <span>${plant['Plant Family']}</span>
                     </div>
                     <div class="detail-item">
-                        <span class="detail-label">Planting Window:</span>
+                        <span class="detail-label">Período de Siembra:</span>
                         <span>${plant['Planting Window']}</span>
                     </div>
                     <div class="detail-item">
-                        <span class="detail-label">Days to Harvest:</span>
+                        <span class="detail-label">Días hasta la Cosecha:</span>
                         <span>${plant['Days to Harvest']}</span>
                     </div>
                     <div class="detail-item">
-                        <span class="detail-label">Footprint:</span>
+                        <span class="detail-label">Espacio Requerido:</span>
                         <span>${plant['Footprint']}</span>
                     </div>
                     <div class="detail-item">
-                        <span class="detail-label">Height:</span>
+                        <span class="detail-label">Altura:</span>
                         <span>${plant['Height']}</span>
                     </div>
                     <div class="detail-item">
-                        <span class="detail-label">Planting Method:</span>
+                        <span class="detail-label">Método de Siembra:</span>
                         <span>${plant['Planting Method']}</span>
                     </div>
                     <div class="detail-item">
-                        <span class="detail-label">Trellised:</span>
+                        <span class="detail-label">Enrejado:</span>
                         <span>${plant['Trellised']}</span>
                     </div>
                     <div class="detail-item">
-                        <span class="detail-label">Sun Requirement:</span>
+                        <span class="detail-label">Requisito de Sol:</span>
                         <span>${plant['Some Shade OK']}</span>
                     </div>
                     <div class="detail-item">
-                        <span class="detail-label">Planting Pattern:</span>
+                        <span class="detail-label">Patrón de Siembra:</span>
                         <span>${plant['Single or 2-week Succession']}</span>
                     </div>
                 </div>
