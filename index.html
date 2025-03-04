@@ -4,167 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Growing Your Own Vegetable Guide</title>
-    <style>
-        :root {
-            --primary-color: #2c5530;
-            --secondary-color: #4a7856;
-            --background-color: #f5f7f5;
-            --text-color: #333;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: var(--background-color);
-            color: var(--text-color);
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 1.5rem; /* Reduced padding */
-            text-align: center;
-        }
-
-        .search-container {
-            max-width: 600px;
-            margin: 1.5rem auto; /* Reduced margin */
-            padding: 0 1rem;
-        }
-
-        .search-input {
-            width: 100%;
-            padding: 0.8rem; /* Reduced padding */
-            font-size: 1rem; /* Slightly smaller font size */
-            border: 2px solid var(--secondary-color);
-            border-radius: 8px;
-            outline: none;
-        }
-
-        .plants-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem; /* Reduced gap */
-            padding: 1rem; /* Reduced padding */
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .plant-card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
-            overflow: hidden;
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-
-        .plant-image {
-            width: 100%;
-            height: 160px; /* Reduced height */
-            object-fit: cover;
-            background-color: var(--background-color);
-        }
-
-        .plant-info {
-            padding: 1rem; /* Increased padding */
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-
-        .plant-details {
-            display: grid;
-            gap: 0.2rem; /* Reduced gap */
-            font-size: 0.85rem; /* Slightly smaller font size */
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-            width: 100%;
-            margin: 0.3rem 0; /* Reduced margin */
-        }
-        
-        .plant-details p {
-            margin: 0;
-            line-height: 1.4;
-        }
-
-        .plant-family {
-            display: inline-block;
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.85rem; /* Slightly smaller font size */
-            margin-top: 0.5rem;
-        }
-
-        .modal-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .modal {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            max-width: 600px;
-            width: 90%;
-            max-height: 90vh;
-            overflow-y: auto;
-            position: relative;
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--primary-color);
-        }
-
-        .modal-content {
-            margin-top: 1rem;
-        }
-
-        .modal h2 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-
-        .modal-details {
-            display: grid;
-            gap: 0.8rem;
-        }
-
-        .detail-item {
-            display: grid;
-            grid-template-columns: 160px 1fr;
-            gap: 1rem;
-            align-items: start;
-        }
-
-        .detail-label {
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -186,171 +26,35 @@
         </div>
     </div>
 
+    <script src="script.js"></script>
     <script>
-        async function loadPlants() {
-            try {
-                const response = await fetch('data.json');
-                const data = await response.json();
-                return data;
-            } catch (error) {
-                console.error('Error loading plants:', error);
-                return [];
-            }
-        }
+        const labels = {
+            language: 'en',
+            plantFamily: 'Plant Family',
+            plantingWindow: 'Planting Window',
+            daysToHarvest: 'Days to Harvest',
+            footprint: 'Footprint',
+            height: 'Height',
+            plantingMethod: 'Planting Method',
+            trellised: 'Trellised',
+            sunRequirement: 'Sun Requirement',
+            plantingPattern: 'Planting Pattern'
+        };
 
-        function createPlantCard(plant) {
-            const card = document.createElement('div');
-            card.className = 'plant-card';
+        const popularPlantNames = [
+            'Tomato',
+            'Pepper',
+            'Lettuce',
+            'Cucumber',
+            'Carrot',
+            'Beans',
+            'Kale',
+            'Onion',
+            'Garlic',
+            'Broccoli'
+        ];
 
-            const image = document.createElement('img');
-            image.className = 'plant-image';
-            image.src = `images/${plant['image_name']}`;
-            image.alt = plant['Crop Name'];
-            image.onerror = () => {
-                image.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Crect width="100" height="100" fill="%23f5f7f5"%3E%3C/rect%3E%3Ctext x="50" y="50" font-family="Arial" font-size="14" fill="%23666" text-anchor="middle" dy=".3em"%3ENo Image%3C/text%3E%3C/svg%3E';
-            };
-
-            card.appendChild(image);
-
-            const info = document.createElement('div');
-            info.className = 'plant-info';
-
-            const name = document.createElement('h2');
-            name.className = 'plant-name';
-            name.textContent = plant['Crop Name'];
-
-            const details = document.createElement('div');
-            details.className = 'plant-details';
-
-            const plantDetails = [
-                ['Planting Window', plant['Planting Window']],
-                ['Days to Harvest', plant['Days to Harvest']],
-                ['Footprint', plant['Footprint']],
-                ['Height', plant['Height']],
-                ['Planting Method', plant['Planting Method']],
-                ['Sun Requirement', plant['Some Shade OK']]
-            ].filter(([_, value]) => value && value.trim());
-
-            details.innerHTML = plantDetails
-                .map(([label, value]) => `<p><strong>${label}:</strong> ${value.trim()}</p>`)
-                .join('');
-
-            const family = document.createElement('div');
-            family.className = 'plant-family';
-            family.textContent = plant['Plant Family'];
-
-            info.appendChild(name);
-            info.appendChild(details);
-            info.appendChild(family);
-            card.appendChild(info);
-
-            card.addEventListener('click', () => showPlantDetails(plant));
-
-            return card;
-        }
-
-        function filterPlants(plants, searchTerm) {
-            return plants.filter(plant =>
-                plant['Crop Name'].toLowerCase().includes(searchTerm.toLowerCase()) ||
-                plant['Plant Family'].toLowerCase().includes(searchTerm.toLowerCase())
-            );
-        }
-
-        function showPlantDetails(plant) {
-            const modalOverlay = document.getElementById('modalOverlay');
-            const modalContent = document.getElementById('modalContent');
-
-            modalContent.innerHTML = `
-                <img src="images/${plant['image_name']}" alt="${plant['Crop Name']}" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                <h2>${plant['Crop Name']}</h2>
-                <div class="modal-details">
-                    <div class="detail-item">
-                        <span class="detail-label">Plant Family:</span>
-                        <span>${plant['Plant Family']}</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Planting Window:</span>
-                        <span>${plant['Planting Window']}</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Days to Harvest:</span>
-                        <span>${plant['Days to Harvest']}</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Footprint:</span>
-                        <span>${plant['Footprint']}</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Height:</span>
-                        <span>${plant['Height']}</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Planting Method:</span>
-                        <span>${plant['Planting Method']}</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Trellised:</span>
-                        <span>${plant['Trellised']}</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Sun Requirement:</span>
-                        <span>${plant['Some Shade OK']}</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Planting Pattern:</span>
-                        <span>${plant['Single or 2-week Succession']}</span>
-                    </div>
-                </div>
-            `;
-
-            modalOverlay.style.display = 'flex';
-        }
-
-        document.addEventListener('DOMContentLoaded', async () => {
-            const plants = await loadPlants();
-            const plantsGrid = document.getElementById('plantsGrid');
-            const searchInput = document.getElementById('searchInput');
-            const modalOverlay = document.getElementById('modalOverlay');
-            const modalClose = document.getElementById('modalClose');
-
-            const popularPlants = plants.filter(plant => [
-                'Tomato',
-                'Pepper',
-                'Lettuce',
-                'Cucumber',
-                'Carrot',
-                'Beans',
-                'Kale',
-                'Onion',
-                'Garlic',
-                'Broccoli'
-            ].includes(plant['Crop Name'])).slice(0, 12);
-
-            function renderPlants(filteredPlants) {
-                filteredPlants.sort((a, b) => a['Crop Name'].localeCompare(b['Crop Name'])); // Sort alphabetically by 'Crop Name'
-                plantsGrid.innerHTML = '';
-                filteredPlants.forEach(plant => {
-                    plantsGrid.appendChild(createPlantCard(plant));
-                });
-            }
-
-            renderPlants(popularPlants);
-
-            searchInput.addEventListener('input', (e) => {
-                const filteredPlants = filterPlants(plants, e.target.value);
-                renderPlants(filteredPlants);
-            });
-
-            modalClose.addEventListener('click', () => {
-                modalOverlay.style.display = 'none';
-            });
-
-            modalOverlay.addEventListener('click', (e) => {
-                if (e.target === modalOverlay) {
-                    modalOverlay.style.display = 'none';
-                }
-            });
-        });
+        initializeApp(labels, popularPlantNames);
     </script>
 </body>
 </html>
