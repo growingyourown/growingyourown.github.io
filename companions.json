@@ -1,0 +1,151 @@
+{
+    "Plant Families Companion Info": {
+      "Amaranth": {
+        "Watering Needs": "Moderate, drought-tolerant once established.",
+        "Common Pests": ["Leaf miners", "Flea beetles", "Aphids"],
+        "Good Companions": ["Corn", "Onions", "Pepper", "Eggplant", "Tomatoes", "Potatoes", "Beets", "Carrots", "Radishes", "Basil", "Nasturtiums", "Legumes (beans, peas)", "Marigolds"],
+        "Bad Companions": ["Brassicas (cabbage family)", "Celery"],
+        "Other Info": "Generally robust and adaptable. Known for edible leaves and seeds. Benefits from well-drained soil and full sun."
+      },
+      "Carrot": {
+        "Watering Needs": "Consistent moisture, especially during germination and root development.",
+        "Common Pests": ["Carrot rust fly", "Aphids", "Flea beetles", "Nematodes"],
+        "Good Companions": ["Rosemary", "Sage", "Marigolds", "Nasturtiums", "Lettuce", "Radishes", "Onions", "Leeks", "Garlic", "Peas", "Beans"],
+        "Bad Companions": ["Dill", "Fennel", "Celery"],
+        "Other Info": "Prefers loose, well-drained soil. Benefits from deep watering. Many members are aromatic herbs or root vegetables."
+      },
+      "Cabbage": {
+        "Watering Needs": "Consistent and ample moisture, especially during head formation.",
+        "Common Pests": ["Cabbage worms", "Aphids", "Flea beetles", "Cutworms", "Cabbage root maggot"],
+        "Good Companions": ["Rosemary", "Sage", "Thyme", "Dill", "Mint", "Chamomile", "Marigolds", "Nasturtiums", "Garlic", "Onions", "Leeks", "Beets", "Celery", "Spinach", "Lettuce", "Potatoes"],
+        "Bad Companions": ["Strawberries", "Tomatoes", "Grapes", "Bush beans"],
+        "Other Info": "Heavy feeders, benefit from fertile soil and regular fertilization. Many members are cool-weather crops. Known for sulfurous compounds that may deter some pests."
+      },
+      "Mint": {
+        "Watering Needs": "Moderate to high, prefers consistently moist soil.",
+        "Common Pests": ["Aphids", "Spider mites", "Mint rust"],
+        "Good Companions": ["Cabbage", "Tomatoes", "Eggplant", "Peppers", "Broccoli", "Cauliflower", "Kale"],
+        "Bad Companions": ["Asparagus"],
+        "Other Info": "Vigorous and spreading plants, many are aromatic herbs. Can be invasive, container planting recommended for some. Repels many pests but can attract spider mites."
+      },
+      "Legume": {
+        "Watering Needs": "Moderate, avoid waterlogging, especially during flowering.",
+        "Common Pests": ["Aphids", "Bean beetles", "Mexican bean beetles", "Spider mites", "Whiteflies"],
+        "Good Companions": ["Corn", "Potatoes", "Carrots", "Cucumbers", "Radishes", "Beets", "Cabbage", "Cauliflower", "Broccoli", "Marigolds", "Rosemary", "Sage", "Summer savory"],
+        "Bad Companions": ["Alliums (onion, garlic, leeks)", "Fennel"],
+        "Other Info": "Nitrogen-fixing, beneficial for soil health. Diverse group including beans, peas, and lentils. Generally prefer well-drained soil and full sun."
+      },
+      "Beet": {
+        "Watering Needs": "Consistent moisture for best root development.",
+        "Common Pests": ["Leaf miners", "Flea beetles", "Aphids"],
+        "Good Companions": ["Onions", "Garlic", "Lettuce", "Cabbage", "Broccoli", "Cauliflower", "Bush beans", "Radishes"],
+        "Bad Companions": ["Pole beans", "Mustard"],
+        "Other Info": "Cool-season root vegetables and leafy greens. Tolerant of some shade. Edible roots and leaves."
+      },
+      "Sunflower": {
+        "Watering Needs": "Moderate, drought-tolerant once established.",
+        "Common Pests": ["Sunflower moth", "Aphids", "Spider mites", "Downy mildew"],
+        "Good Companions": ["Corn", "Cucumbers", "Squash", "Beans"],
+        "Bad Companions": ["Brassicas (cabbage family)", "Potatoes"],
+        "Other Info": "Large family with diverse members including ornamentals, vegetables (like lettuce and endive), and oilseed crops. Generally prefer full sun and well-drained soil. Many attract beneficial insects."
+      },
+      "Nightshade": {
+        "Watering Needs": "Consistent moisture, avoid extremes of dryness or waterlogging.",
+        "Common Pests": ["Aphids", "Flea beetles", "Tomato hornworms", "Whiteflies", "Spider mites", "Blossom-end rot"],
+        "Good Companions": ["Basil", "Marigolds", "Nasturtiums", "Mint", "Carrots", "Onions", "Garlic", "Asparagus"],
+        "Bad Companions": ["Brassicas (cabbage family)", "Corn", "Potatoes (near tomatoes and peppers)", "Fennel", "Kohlrabi"],
+        "Other Info": "Includes many popular vegetables like tomatoes, peppers, potatoes, eggplant. Often require warm weather and full sun. Susceptible to various diseases, crop rotation is important."
+      },
+      "Onion": {
+        "Watering Needs": "Consistent moisture, especially during bulb formation.",
+        "Common Pests": ["Onion maggot", "Thrips", "Onion bulb fly"],
+        "Good Companions": ["Carrots", "Beets", "Brassicas (cabbage family)", "Lettuce", "Tomatoes", "Peppers", "Strawberries", "Chamomile", "Summer Savory"],
+        "Bad Companions": ["Legumes (beans, peas)", "Asparagus", "Sage", "Parsley"],
+        "Other Info": "Aromatic bulbs, many with pungent flavors. Repel many pests. Require well-drained soil and full sun."
+      },
+      "Ginger": {
+        "Watering Needs": "Consistent moisture, prefers humid conditions.",
+        "Common Pests": ["Aphids", "Spider mites", "Nematodes"],
+        "Good Companions": ["Legumes (beans, peas)", "Marigolds"],
+        "Bad Companions": ["None specifically listed, but avoid planting in overly dry or cold conditions."],
+        "Other Info": "Tropical plants, require warm temperatures and shade in hot climates. Rhizomes are the harvested part. Benefit from rich, well-draining soil."
+      },
+      "Grass": {
+        "Watering Needs": "Varies greatly by species (e.g., sweet corn vs. lemongrass), but generally moderate.",
+        "Common Pests": ["Corn earworm", "Corn borer", "Aphids", "Grasshoppers"],
+        "Good Companions": ["Legumes (beans, peas)", "Squash", "Potatoes", "Sunflowers"],
+        "Bad Companions": ["Tomatoes"],
+        "Other Info": "Large family including cereals, grasses, and bamboos. Sweet corn is a common vegetable. Often used as a 'support' plant in companion planting (e.g., corn for beans to climb)."
+      },
+      "Basellaceae": {
+        "Watering Needs": "Consistent moisture, prefers humid conditions.",
+        "Common Pests": ["Aphids", "Spider mites"],
+        "Good Companions": ["Not much specific companion planting info readily available. Generally benefits from similar companions as spinach and other leafy greens."],
+        "Bad Companions": ["None specifically listed, but monitor for competition with fast-growing neighbors."],
+        "Other Info": "Includes Malabar spinach, a heat-tolerant leafy green. Vine-like growth habit. Prefers warm weather and moist soil."
+      },
+      "Aizoaceae": {
+        "Watering Needs": "Moderate, drought-tolerant once established.",
+        "Common Pests": ["Aphids", "Spider mites"],
+        "Good Companions": ["Similar companions as spinach and other leafy greens. Not much specific info readily available."],
+        "Bad Companions": ["None specifically listed, but monitor for competition with fast-growing neighbors."],
+        "Other Info": "Includes New Zealand Spinach, another heat-tolerant leafy green alternative to spinach. Spreading growth habit. Prefers warm weather and well-drained soil."
+      },
+      "Cactus": {
+        "Watering Needs": "Very low once established, drought-tolerant.",
+        "Common Pests": ["Scale", "Mealybugs", "Spider mites"],
+        "Good Companions": ["Generally not considered for traditional companion planting due to different needs. May be interplanted with other drought-tolerant succulents or herbs."],
+        "Bad Companions": ["Moisture-loving plants"],
+        "Other Info": "Succulents adapted to arid environments. Nopales (cactus pads) are edible. Require full sun and very well-drained soil."
+      },
+      "Squash": {
+        "Watering Needs": "Consistent moisture, especially during fruit development.",
+        "Common Pests": ["Squash vine borer", "Squash bugs", "Cucumber beetles", "Powdery mildew", "Aphids"],
+        "Good Companions": ["Corn", "Beans", "Nasturtiums", "Marigolds", "Oregano", "Dill"],
+        "Bad Companions": ["Potatoes", "Brassicas (cabbage family)"],
+        "Other Info": "Large family with diverse members including pumpkins, zucchini, melons, cucumbers. Heavy feeders, benefit from fertile soil and ample space. Many are vining plants."
+      },
+       "Buckwheat": {
+        "Watering Needs": "Moderate, relatively drought-tolerant.",
+        "Common Pests": ["Aphids"],
+        "Good Companions": ["Beneficial for attracting pollinators and predatory insects. Often used as a cover crop to improve soil."],
+        "Bad Companions": ["None specifically listed, generally considered a beneficial companion plant."],
+        "Other Info": "Fast-growing cover crop, edible seeds (buckwheat groats), and flowers attract beneficial insects. Tolerates poor soil. Includes rhubarb and sorrel as vegetable members."
+      },
+       "Malvaceae": {
+        "Watering Needs": "Moderate, consistent moisture.",
+        "Common Pests": ["Aphids", "Whiteflies", "Spider mites", "Japanese beetles"],
+        "Good Companions": ["Not much specific companion planting info readily available. Okra (a member) is sometimes interplanted with legumes."],
+        "Bad Companions": ["None specifically listed, but monitor for competition with fast-growing neighbors."],
+        "Other Info": "Includes okra and roselle (hibiscus). Often prefer warm weather and full sun. Roselle is known for edible calyxes used in drinks and jams."
+      },
+      "Iris": {
+        "Watering Needs": "Moderate during growing season, drier during dormancy.",
+        "Common Pests": ["Iris borer", "Aphids", "Slugs", "Snails"],
+        "Good Companions": ["Generally ornamental, not typically used in vegetable companion planting. May be planted near other bulbs or perennials."],
+        "Bad Companions": ["None specifically listed in a vegetable context."],
+        "Other Info": "Primarily ornamental family, Saffron crocus is the source of saffron spice. Bulbs or corms are planted. Prefer well-drained soil."
+      },
+      "Dioscoreaceae": {
+        "Watering Needs": "Consistent moisture during the growing season.",
+        "Common Pests": ["Scale insects", "Nematodes", "Yam beetles"],
+        "Good Companions": ["Not much specific companion planting info readily available. May benefit from interplanting with legumes for nitrogen."],
+        "Bad Companions": ["None specifically listed, but avoid planting in overly wet or poorly drained soil."],
+        "Other Info": "Includes true yams (different from sweet potatoes). Tropical vines, require long growing season and support (trellis). Tubers are the edible part."
+      },
+       "Euphorbiaceae": {
+        "Watering Needs": "Moderate, drought-tolerant once established.",
+        "Common Pests": ["Spider mites", "Whiteflies", "Scale insects"],
+        "Good Companions": ["Not much specific companion planting info readily available. May benefit from general companion plants for pest control like marigolds."],
+        "Bad Companions": ["None specifically listed, but avoid planting in overly wet soil."],
+        "Other Info": "Diverse family, Yuca (cassava) is a starchy root vegetable. Often adapted to warmer climates. Requires well-drained soil."
+      },
+       "Araceae": {
+        "Watering Needs": "High, prefers consistently moist to wet soil.",
+        "Common Pests": ["Aphids", "Spider mites", "Root rot"],
+        "Good Companions": ["Water-loving plants. Not typically used in traditional companion planting with vegetables."],
+        "Bad Companions": ["Drought-tolerant plants"],
+        "Other Info": "Includes Taro (Dasheen), a tropical root crop. Requires warm, humid conditions and consistently moist to wet soil. Often grown in wetland or boggy areas."
+      }
+    }
+  }

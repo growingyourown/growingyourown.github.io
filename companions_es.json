@@ -1,0 +1,158 @@
+{
+    "Plant Families Companion Info": {
+      "Amaranto": {
+        "Watering Needs": "Riego moderado, tolerante a la sequía una vez establecido.",
+        "Common Pests": ["Minadores de hojas", "Escarabajos pulga", "Áfidos"],
+        "Good Companions": ["Maíz", "Cebollas", "Pimiento", "Berenjena", "Tomates", "Patatas", "Remolachas", "Zanahorias", "Rábanos", "Albahaca", "Capuchinas", "Leguminosas (frijoles, guisantes)", "Caléndulas"],
+        "Bad Companions": ["Repollo", "Apio"],
+        "Other Info": "Generalmente robusto y adaptable. Conocido por sus hojas y semillas comestibles. Se beneficia de un suelo bien drenado y pleno sol."
+      },
+      "Zanahoria": {
+        "Watering Needs": "Humedad constante, especialmente durante la germinación y el desarrollo de la raíz.",
+        "Common Pests": ["Mosca de la zanahoria", "Áfidos", "Escarabajos pulga", "Nematodos"],
+        "Good Companions": ["Romero", "Salvia", "Caléndulas", "Capuchinas", "Lechuga", "Rábanos", "Cebollas", "Puerros", "Ajo", "Guisantes", "Frijoles"],
+        "Bad Companions": ["Eneldo", "Hinojo", "Apio"],
+        "Other Info": "Prefiere suelos sueltos y bien drenados. Se beneficia de un riego profundo. Muchos miembros son hierbas aromáticas o tubérculos."
+      },
+      "Repollo": {
+        "Watering Needs": "Humedad constante y abundante, especialmente durante la formación de la cabeza.",
+        "Common Pests": ["Gusanos de la col", "Áfidos", "Escarabajos pulga", "Gusanos cortadores", "Mosca de la raíz de la col"],
+        "Good Companions": ["Romero", "Salvia", "Tomillo", "Eneldo", "Menta", "Manzanilla", "Caléndulas", "Capuchinas", "Ajo", "Cebollas", "Puerros", "Remolachas", "Apio", "Espinacas", "Lechuga", "Patatas"],
+        "Bad Companions": ["Fresas", "Tomates", "Uvas", "Judías verdes"],
+        "Other Info": "Grandes consumidoras de nutrientes, se benefician de suelos fértiles y fertilización regular. Muchos miembros son cultivos de clima frío. Conocidas por compuestos sulfurosos que pueden disuadir algunas plagas."
+      },
+      "Menta": {
+        "Watering Needs": "De moderado a alto, prefiere un suelo constantemente húmedo.",
+        "Common Pests": ["Áfidos", "Araña roja", "Roya de la menta"],
+        "Good Companions": ["Repollo", "Tomates", "Berenjena", "Pimientos", "Brócoli", "Coliflor", "Col rizada"],
+        "Bad Companions": ["Espárragos"],
+        "Other Info": "Plantas vigorosas y extendidas, muchas son hierbas aromáticas. Puede ser invasiva, se recomienda plantar en macetas para algunas. Repele muchas plagas pero puede atraer araña roja."
+      },
+      "Leguminosa": {
+        "Watering Needs": "Moderado, evitar el encharcamiento, especialmente durante la floración.",
+        "Common Pests": ["Áfidos", "Escarabajos de la judía", "Escarabajos mexicanos de la judía", "Araña roja", "Mosca blanca"],
+        "Good Companions": ["Maíz", "Patatas", "Zanahorias", "Pepinos", "Rábanos", "Remolachas", "Repollo", "Coliflor", "Brócoli", "Caléndulas", "Romero", "Salvia", "Ajedrea de verano"],
+        "Bad Companions": ["Cebolla", "Ajo", "Puerro", "Hinojo"],
+        "Other Info": "Fijadoras de nitrógeno, beneficiosas para la salud del suelo. Grupo diverso que incluye frijoles, guisantes y lentejas. Generalmente prefieren suelos bien drenados y pleno sol."
+      },
+      "Remolacha": {
+        "Watering Needs": "Humedad constante para un mejor desarrollo de la raíz.",
+        "Common Pests": ["Minadores de hojas", "Escarabajos pulga", "Áfidos"],
+        "Good Companions": ["Cebollas", "Ajo", "Lechuga", "Repollo", "Brócoli", "Coliflor", "Judías verdes", "Rábanos"],
+        "Bad Companions": ["Judías de caña", "Mostaza"],
+        "Other Info": "Hortalizas de raíz y verduras de hoja de estación fría. Tolerante a algo de sombra. Raíces y hojas comestibles."
+      },
+      "Girasol": {
+        "Watering Needs": "Moderado, tolerante a la sequía una vez establecido.",
+        "Common Pests": ["Palomilla del girasol", "Áfidos", "Araña roja", "Mildiu velloso"],
+        "Good Companions": ["Maíz", "Pepinos", "Calabaza", "Frijoles"],
+        "Bad Companions": ["Repollo", "Patatas"],
+        "Other Info": "Familia grande con diversos miembros, incluyendo plantas ornamentales, verduras (como lechuga y endibia) y cultivos de semillas oleaginosas. Generalmente prefieren pleno sol y suelo bien drenado. Muchos atraen insectos beneficiosos."
+      },
+      "Solanáceas": {
+        "Watering Needs": "Humedad constante, evitar extremos de sequedad o encharcamiento.",
+        "Common Pests": ["Áfidos", "Escarabajos pulga", "Gusanos del tomate", "Mosca blanca", "Araña roja", "Pudrición apical"],
+        "Good Companions": ["Albahaca", "Caléndulas", "Capuchinas", "Menta", "Zanahorias", "Cebollas", "Ajo", "Espárragos"],
+        "Bad Companions": ["Repollo", "Maíz", "Patatas (cerca de tomates y pimientos)", "Hinojo", "Colirrábano"],
+        "Other Info": "Incluye muchas verduras populares como tomates, pimientos, patatas, berenjenas. A menudo requieren clima cálido y pleno sol. Susceptibles a diversas enfermedades, la rotación de cultivos es importante."
+      },
+      "Cebolla": {
+        "Watering Needs": "Humedad constante, especialmente durante la formación del bulbo.",
+        "Common Pests": ["Mosca de la cebolla", "Trips", "Mosca del bulbo de la cebolla"],
+        "Good Companions": ["Zanahorias", "Remolachas", "Repollo", "Lechuga", "Tomates", "Pimientos", "Fresas", "Manzanilla", "Ajedrea de verano"],
+        "Bad Companions": ["Leguminosa", "Espárragos", "Salvia", "Perejil"],
+        "Other Info": "Bulbos aromáticos, muchos con sabores picantes. Repelen muchas plagas. Requieren suelo bien drenado y pleno sol."
+      },
+      "Jengibre": {
+        "Watering Needs": "Humedad constante, prefiere condiciones húmedas.",
+        "Common Pests": ["Áfidos", "Araña roja", "Nematodos"],
+        "Good Companions": ["Leguminosas (frijoles, guisantes)", "Caléndulas"],
+        "Bad Companions": ["Ninguno específicamente listado, pero evitar plantar en condiciones demasiado secas o frías."],
+        "Other Info": "Plantas tropicales, requieren temperaturas cálidas y sombra en climas cálidos. Los rizomas son la parte cosechada. Se benefician de un suelo rico y bien drenante."
+      },
+      "Hierba": {
+        "Watering Needs": "Varía mucho según la especie (ej. maíz dulce vs. hierba limón), pero generalmente moderado.",
+        "Common Pests": ["Gusano elotero", "Barrenador del maíz", "Áfidos", "Saltamontes"],
+        "Good Companions": ["Leguminosas (frijoles, guisantes)", "Calabaza", "Patatas", "Girasoles"],
+        "Bad Companions": ["Tomates"],
+        "Other Info": "Familia grande que incluye cereales, pastos y bambúes. El maíz dulce es una verdura común. A menudo se utiliza como planta de 'soporte' en la siembra asociada (ej. maíz para que trepen los frijoles)."
+      },
+      "Basellaceae": {
+        "Watering Needs": "Humedad constante, prefiere condiciones húmedas.",
+        "Common Pests": ["Áfidos", "Araña roja"],
+        "Good Companions": ["No hay mucha información específica sobre siembra asociada disponible. Generalmente se beneficia de compañeros similares a las espinacas y otras verduras de hoja verde."],
+        "Bad Companions": ["Ninguno específicamente listado, pero vigilar la competencia con vecinos de rápido crecimiento."],
+        "Other Info": "Incluye la espinaca de Malabar, una verdura de hoja verde tolerante al calor. Hábito de crecimiento similar a una enredadera. Prefiere clima cálido y suelo húmedo."
+      },
+      "Aizoaceae": {
+        "Watering Needs": "Moderado, tolerante a la sequía una vez establecido.",
+        "Common Pests": ["Áfidos", "Araña roja"],
+        "Good Companions": ["Compañeros similares a las espinacas y otras verduras de hoja verde. No hay mucha información específica fácilmente disponible."],
+        "Bad Companions": ["Ninguno específicamente listado, pero vigilar la competencia con vecinos de rápido crecimiento."],
+        "Other Info": "Incluye la espinaca de Nueva Zelanda, otra alternativa de verdura de hoja verde tolerante al calor a la espinaca. Hábito de crecimiento rastrero. Prefiere clima cálido y suelo bien drenado."
+      },
+      "Cactus": {
+        "Watering Needs": "Muy bajo una vez establecido, tolerante a la sequía.",
+        "Common Pests": ["Cochinillas", "Cochinillas algodonosas", "Araña roja"],
+        "Good Companions": ["Generalmente no se consideran para la siembra asociada tradicional debido a diferentes necesidades. Puede ser intercalado con otras suculentas o hierbas tolerantes a la sequía."],
+        "Bad Companions": ["Plantas amantes de la humedad"],
+        "Other Info": "Suculentas adaptadas a ambientes áridos. Los nopales (hojas de cactus) son comestibles. Requieren pleno sol y suelo muy bien drenado."
+      },
+      "Calabaza": {
+        "Watering Needs": "Humedad constante, especialmente durante el desarrollo del fruto.",
+        "Common Pests": ["Barrenador de la calabaza", "Chinche de la calabaza", "Escarabajos del pepino", "Oídio", "Áfidos"],
+        "Good Companions": ["Maíz", "Frijoles", "Capuchinas", "Caléndulas", "Orégano", "Eneldo"],
+        "Bad Companions": ["Patatas", "Repollo"],
+        "Other Info": "Familia grande con diversos miembros, incluyendo calabazas, calabacín, melones, pepinos. Grandes consumidores de nutrientes, se benefician de suelos fértiles y amplio espacio. Muchas son plantas trepadoras."
+      },
+       "Alforfón": {
+        "Watering Needs": "Moderado, relativamente tolerante a la sequía.",
+        "Common Pests": ["Áfidos"],
+        "Good Companions": ["Beneficioso para atraer polinizadores e insectos depredadores. A menudo utilizado como cultivo de cobertura para mejorar el suelo."],
+        "Bad Companions": ["Ninguno específicamente listado, generalmente considerado una planta compañera beneficiosa."],
+        "Other Info": "Cultivo de cobertura de rápido crecimiento, semillas comestibles (trigo sarraceno) y flores atraen insectos beneficiosos. Tolera suelos pobres. Incluye ruibarbo y acedera como miembros vegetales."
+      },
+       "Malváceas": {
+        "Watering Needs": "Moderado, humedad constante.",
+        "Common Pests": ["Áfidos", "Mosca blanca", "Araña roja", "Escarabajos japoneses"],
+        "Good Companions": ["No hay mucha información específica sobre siembra asociada disponible. La okra (un miembro) a veces se intercala con leguminosas."],
+        "Bad Companions": ["Ninguno específicamente listado, pero vigilar la competencia con vecinos de rápido crecimiento."],
+        "Other Info": "Incluye okra y roselle (hibisco). A menudo prefieren clima cálido y pleno sol. Roselle es conocida por sus cálices comestibles utilizados en bebidas y mermeladas."
+      },
+      "Iris": {
+        "Watering Needs": "Moderado durante la temporada de crecimiento, más seco durante la latencia.",
+        "Common Pests": ["Barrenador del iris", "Áfidos", "Babosas", "Caracoles"],
+        "Good Companions": ["Generalmente ornamentales, no se utilizan típicamente en la siembra asociada de hortalizas. Puede ser plantado cerca de otros bulbos o plantas perennes."],
+        "Bad Companions": ["Ninguno específicamente listado en un contexto vegetal."],
+        "Other Info": "Familia principalmente ornamental, el azafrán crocus es la fuente de la especia azafrán. Se plantan bulbos o cormos. Prefieren suelo bien drenado."
+      },
+      "Dioscoreaceae": {
+        "Watering Needs": "Humedad constante durante la temporada de crecimiento.",
+        "Common Pests": ["Cochinillas", "Nematodos", "Escarabajos del ñame"],
+        "Good Companions": ["No hay mucha información específica sobre siembra asociada disponible. Puede beneficiarse de la intercalación con leguminosas para obtener nitrógeno."],
+        "Bad Companions": ["Ninguno específicamente listado, pero evitar plantar en suelos demasiado húmedos o mal drenados."],
+        "Other Info": "Incluye los verdaderos ñames (diferentes de las batatas). Enredaderas tropicales, requieren una larga temporada de crecimiento y soporte (enrejado). Los tubérculos son la parte comestible."
+      },
+       "Euphorbiáceas": {
+        "Watering Needs": "Moderado, tolerante a la sequía una vez establecido.",
+        "Common Pests": ["Araña roja", "Mosca blanca", "Cochinillas"],
+        "Good Companions": ["No hay mucha información específica sobre siembra asociada disponible. Puede beneficiarse de plantas compañeras generales para el control de plagas como las caléndulas."],
+        "Bad Companions": ["Ninguno específicamente listado, pero evitar plantar en suelos demasiado húmedos."],
+        "Other Info": "Familia diversa, la yuca (cassava) es una raíz vegetal feculenta. A menudo adaptada a climas más cálidos. Requiere suelo bien drenado."
+      },
+       "Araceae": {
+        "Watering Needs": "Alto, prefiere suelo consistentemente húmedo a mojado.",
+        "Common Pests": ["Áfidos", "Araña roja", "Pudrición de la raíz"],
+        "Good Companions": ["Plantas amantes del agua. No se utiliza típicamente en la siembra asociada tradicional con verduras."],
+        "Bad Companions": ["Plantas tolerantes a la sequía"],
+        "Other Info": "Incluye el taro (Dasheen), un cultivo de raíz tropical. Requiere condiciones cálidas y húmedas y suelo consistentemente húmedo a mojado. A menudo se cultiva en zonas húmedas o pantanosas."
+      },
+          "Morning Glory": {
+        "Watering Needs": "Moderado, tolerante a la sequía una vez establecido.",
+        "Common Pests": ["Escarabajos pulga", "Gusanos de camote", "Minadores de hojas"],
+        "Good Companions": ["No mucha información específica de siembra asociada disponible."],
+        "Bad Companions": ["Ninguno específicamente listado, pero vigilar la competencia con vecinos de rápido crecimiento."],
+        "Other Info": "Incluye batatas.  Enredaderas, requieren clima cálido y pleno sol.  Tubérculos comestibles."
+      }
+    }
+  }
