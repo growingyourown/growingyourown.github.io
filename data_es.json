@@ -325,19 +325,7 @@
     "Single or 2-week Succession": "Sucesión (Perenne)",
     "Plant Family": "Cebolla"
   },
-  {
-    "Crop Name": "Cilantro",
-    "image_name": "cilantro.png",
-    "Planting Window": "Marzo-Mayo, Agosto-Septiembre",
-    "Footprint": "6x6 pulgadas",
-    "Trellised": "No",
-    "Planting Method": "Fila o en bandas",
-    "Height": "Baja",
-    "Days to Harvest": "50-60",
-    "Some Shade OK": "Algo de sombra está bien",
-    "Single or 2-week Succession": "Sucesión",
-    "Plant Family": "Zanahoria"
-  },
+
   {
     "Crop Name": "Berza",
     "image_name": "collard_greens.png",
@@ -1445,19 +1433,7 @@
     "Single or 2-week Succession": "Única",
     "Plant Family": "Dioscoreaceae"
   },
-  {
-    "Crop Name": "Judía Metro",
-    "image_name": "yard_long_beans.png",
-    "Planting Window": "Mayo-Junio",
-    "Footprint": "4x4 pulgadas enrejado",
-    "Trellised": "Sí",
-    "Planting Method": "Fila o en bandas",
-    "Height": "Alta",
-    "Days to Harvest": "75-85",
-    "Some Shade OK": "Solo a pleno sol",
-    "Single or 2-week Succession": "Sucesión",
-    "Plant Family": "Leguminosa"
-  },
+
   {
     "Crop Name": "Yuca (Casava)",
     "image_name": "yuca.png",

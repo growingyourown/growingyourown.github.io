@@ -325,19 +325,7 @@
     "Single or 2-week Succession": "Succession (Perennial)",
     "Plant Family": "Onion"
   },
-  {
-    "Crop Name": "Cilantro",
-    "image_name": "cilantro.png",
-    "Planting Window": "March-May, August-September",
-    "Footprint": "6x6 inch",
-    "Trellised": "No",
-    "Planting Method": "Row or banded",
-    "Height": "Short",
-    "Days to Harvest": "50-60",
-    "Some Shade OK": "Some shade ok",
-    "Single or 2-week Succession": "Succession",
-    "Plant Family": "Carrot"
-  },
+
   {
     "Crop Name": "Collard Green",
     "image_name": "collard_greens.png",
@@ -1067,19 +1055,7 @@
     "Single or 2-week Succession": "Single",
     "Plant Family": "Onion"
   },
-  {
-    "Crop Name": "Snake Bean",
-    "image_name": "snake_beans.png",
-    "Planting Window": "May-June",
-    "Footprint": "4x4 inch trellised",
-    "Trellised": "Yes",
-    "Planting Method": "Row or banded",
-    "Height": "Tall",
-    "Days to Harvest": "75-85",
-    "Some Shade OK": "Full sun only",
-    "Single or 2-week Succession": "Succession",
-    "Plant Family": "Legume"
-  },
+
   {
     "Crop Name": "Snow Pea",
     "image_name": "snow_peas.png",
@@ -1132,19 +1108,7 @@
     "Single or 2-week Succession": "Succession",
     "Plant Family": "Beet"
   },
-  {
-    "Crop Name": "Spinach Green",
-    "image_name": "spinach_greens.png",
-    "Planting Window": "April & Sept",
-    "Footprint": "4x4 inch",
-    "Trellised": "No",
-    "Planting Method": "Row or banded",
-    "Height": "Short",
-    "Days to Harvest": "20-30 (baby greens), 40-50 (mature)",
-    "Some Shade OK": "Some shade ok",
-    "Single or 2-week Succession": "Succession",
-    "Plant Family": "Beet"
-  },
+
   {
     "Crop Name": "Spring Onion",
     "image_name": "spring_onions.png",
@@ -1445,19 +1409,7 @@
     "Single or 2-week Succession": "Single",
     "Plant Family": "Dioscoreaceae"
   },
-  {
-    "Crop Name": "Yard Long Bean",
-    "image_name": "yard_long_beans.png",
-    "Planting Window": "May-June",
-    "Footprint": "4x4 inch trellised",
-    "Trellised": "Yes",
-    "Planting Method": "Row or banded",
-    "Height": "Tall",
-    "Days to Harvest": "75-85",
-    "Some Shade OK": "Full sun only",
-    "Single or 2-week Succession": "Succession",
-    "Plant Family": "Legume"
-  },
+
   {
     "Crop Name": "Yuca (Cassava)",
     "image_name": "yuca.png",
